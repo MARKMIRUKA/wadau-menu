@@ -1,79 +1,22 @@
-/* Load 'The Seasons' Font */
-@font-face {
-    font-family: 'The Seasons';
-    src: url('../frontend/fonts/Demo-The-Seasons/Demo_Fonts/Fontspring-DEMO-theseasons-bd.otf') format('otf'),
-    url('../frontend/fonts/Demo-The-Seasons/Demo_Fonts/Fontspring-DEMO-theseasons-bdit.otf') format('otf'),
-    url('../frontend/fonts/Demo-The-Seasons/Demo_Fonts/Fontspring-DEMO-theseasons-it.otf') format('otf'),
-    url('../frontend/fonts/Demo-The-Seasons/Demo_Fonts/Fontspring-DEMO-theseasons-lt.otf') format('otf'),
-    url('../frontend/fonts/Demo-The-Seasons/Demo_Fonts/Fontspring-DEMO-theseasons-ltit.otf') format('otf'),
-    url('../frontend/fonts/Demo-The-Seasons/Demo_Fonts/Fontspring-DEMO-theseasons-reg.otf') format('otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'The Seasons', serif;
-}
-
-/* Body */
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #fff;
-}
-
-/* Header */
-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 30px;
-    background: white;
-}
-
-.wadau, .menu, .tray span {
-    font-size: 20px;
-}
-
-/* Tray Icon */
-.tray {
-    display: flex;
-    align-items: center;
-}
-
-.tray img {
-    width: 20px;
-    height: 20px;
-    margin-left: 5px;
-}
 
 /* Special Section */
 .special {
     text-align: center;
-    margin: 40px auto;
-    max-width: 800px;
+    margin: 60px auto 40px; /* Increased top margin to lower the heading */
+    max-width: 1150px;
 }
 
 .special h2 {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Increased bottom margin to create more spacing */
 }
 
 .special-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #F9F9F9;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 10px; /* Removed unnecessary background */
 }
 
 .special-img {
@@ -86,16 +29,16 @@ header {
 .special-details {
     flex: 1;
     text-align: left;
-    margin: 30px 20px;
+    margin: 10px 25px;
 }
 
 .special-details h3 {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 5px;
 }
 
 .special-details p {
-    font-size: 14px;
+    font-size: 18px;
     color: #555;
 }
 
@@ -112,49 +55,4 @@ header {
 
 .view-button:hover {
     background: #333;
-}
-
-
-/* Menu List - Updated for Exact Match */
-.menu-list {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-}
-
-.menu-tittle {
-    padding: 20px 30px;
-    font-size: 22px;
-    text-align: center;
-    width: 100%;
-    border-bottom: 1px solid black;
-}
-
-.menu-item {
-    padding: 20px 30px;
-    font-size: 22px;
-    text-align: left;
-    width: 100%;
-    border-bottom: 1px solid black;
-    cursor: pointer;
-    transition: 0.3s;
-    font-weight: 500;
-
-}
-
-.menu-item:hover {
-    background: rgba(0, 0, 0, 0.05);
-}
-
-/* Footer - Updated to Match Image */
-footer {
-    margin: 20px 0;
-}
-
-footer a {
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
 }
